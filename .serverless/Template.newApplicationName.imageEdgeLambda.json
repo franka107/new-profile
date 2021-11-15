@@ -1,0 +1,17 @@
+{
+  "name": "pzifle-49mdi49",
+  "hash": "oqPZUn6HP3afVzmMcWI9AN8d2h87w/kbLsMMUnh0xSA=",
+  "description": "Image Lambda@Edge for Next CloudFront distribution",
+  "memory": 512,
+  "timeout": 10,
+  "code": "/home/frank/Workplace/NextProjects/samselikoff.com/.serverless_nextjs/image-lambda",
+  "shims": [],
+  "handler": "index.handler",
+  "runtime": "nodejs12.x",
+  "env": {},
+  "role": {
+    "arn": "arn:aws:iam::682547362924:role/pzifle-4d06u"
+  },
+  "arn": "arn:aws:lambda:us-east-1:682547362924:function:pzifle-49mdi49",
+  "region": "us-east-1"
+}

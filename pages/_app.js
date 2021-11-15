@@ -4,7 +4,14 @@ import { animated, useTransition, useChain } from "react-spring";
 import { DialogOverlay, DialogContent } from "@reach/dialog";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
-import { Twitter, GitHub, YouTube } from "../components/logos";
+import {
+  Twitter,
+  GitHub,
+  YouTube,
+  Spotify,
+  LinkedIn,
+  Whatsapp,
+} from "../components/logos";
 import { useRef, useState } from "react";
 import { Link } from "../components/ui";
 import Head from "next/head";
@@ -33,78 +40,22 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <link
-          rel="apple-touch-icon"
-          sizes="57x57"
-          href="/apple-icon-57x57.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="60x60"
-          href="/apple-icon-60x60.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="72x72"
-          href="/apple-icon-72x72.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="76x76"
-          href="/apple-icon-76x76.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="114x114"
-          href="/apple-icon-114x114.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="120x120"
-          href="/apple-icon-120x120.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="144x144"
-          href="/apple-icon-144x144.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="152x152"
-          href="/apple-icon-152x152.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-icon-180x180.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="192x192"
-          href="/android-icon-192x192.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="96x96"
-          href="/favicon-96x96.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
+        <link rel="apple-touch-icon" sizes="57x57" href="/isotype.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="/isotype.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/isotype.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/isotype.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/isotype.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/isotype.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/isotype.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/isotype.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/isotype.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/isotype.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/isotype.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/isotype.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/isotype.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="msapplication-TileImage" content="/isotype.png" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
@@ -114,7 +65,7 @@ const Layout = ({ children }) => {
             <div className="flex justify-between pb-4 md:pb-0 md:border-b md:border-gray-200 md:justify-start">
               <NextLink href="/">
                 <a className="text-sm font-light tracking-wide uppercase md:text-base lg:text-xl">
-                  Sam<span className="font-bold">Selikoff</span>
+                  <span className="font-bold">Frank</span>Cary
                 </a>
               </NextLink>
               <MobileNavButton
@@ -245,29 +196,28 @@ function MobileNav({ isOpen, handleClick, closeMenu }) {
                       <animated.a
                         style={{
                           ...transitions[1].props,
-                          color: "#00aced",
+                          color: "#0A66C2",
                         }}
-                        href="https://twitter.com/samselikoff"
+                        href="https://www.linkedin.com/in/fcaryv/"
                         className="flex items-center justify-center w-full h-12 bg-white rounded shadow-md focus:outline-none"
                       >
-                        <Twitter className="h-6" />
+                        <LinkedIn className="h-6" />
                       </animated.a>
                     </div>
                     <div className="w-1/3 px-2 mt-4">
                       <animated.a
-                        href="https://www.youtube.com/user/samselikoff"
+                        href="https://wa.link/6gw3t6"
                         style={{
                           ...transitions[2].props,
-                          color: "#ff0000",
                         }}
                         className="flex items-center justify-center w-full h-12 bg-white rounded shadow-md focus:outline-none"
                       >
-                        <YouTube className="h-6" />
+                        <Whatsapp className="h-6" />
                       </animated.a>
                     </div>
                     <div className="w-1/3 px-2 mt-4">
                       <animated.a
-                        href="https://github.com/samselikoff"
+                        href="https://github.com/franka107"
                         style={{
                           ...transitions[3].props,
                           color: "#24292F",
@@ -281,7 +231,8 @@ function MobileNav({ isOpen, handleClick, closeMenu }) {
                       { label: "Journal", url: "/work-journal" },
                       { label: "Projects", url: "/projects" },
                       { label: "Podcast", url: "/podcast" },
-                      { label: "Talks", url: "/talks" },
+                      //{ label: "Talks", url: "/talks" },
+                      { label: "Contact", url: "/contact" },
                       { label: "Blog", url: "/blog" },
                     ].map((link, i) => (
                       <div
@@ -315,7 +266,8 @@ function DesktopNav() {
       <DesktopNavLink to="/work-journal">Work journal</DesktopNavLink>
       <DesktopNavLink to="/projects">Projects</DesktopNavLink>
       <DesktopNavLink to="/podcast">Podcast</DesktopNavLink>
-      <DesktopNavLink to="/talks">Talks</DesktopNavLink>
+      {/* <DesktopNavLink to="/talks">Talks</DesktopNavLink> */}
+      <DesktopNavLink to="/contact">Contact</DesktopNavLink>
       <DesktopNavLink to="/blog">Blog</DesktopNavLink>
     </div>
   );

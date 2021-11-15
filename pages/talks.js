@@ -1,6 +1,13 @@
 import { Head, A, Spacer, Lead, Container, Title } from "../components/ui";
 import Image from "next/image";
 
+export function getStaticProps() {
+  return {
+    // returns the default 404 page with a status code of 404
+    notFound: true,
+  };
+}
+
 export default function TalksPage() {
   return (
     <>

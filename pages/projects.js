@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects – Sam Selikoff</title>
+        <title>Frank Cary | Projects</title>
       </Head>
 
       <div className="pb-8">
@@ -17,24 +17,24 @@ export default function Projects() {
           <Spacer size="lg" />
 
           <Lead>
-            My main open source project is{" "}
-            <A href="https://miragejs.com/">Mirage JS</A>, and I'm currently
-            working on bringing it from Ember to the wider JavaScript ecosystem.
+            My main project is{" "}
+            <A href="https://www.facebook.com/tdevts">T-devs</A>, an enterprise
+            to build software and I'm currently working on it.
           </Lead>
 
           <Lead>
-            The rest of my time is spent teaching UI development through videos
-            on EmberMap and YouTube. I also run in-person trainings and do
-            remote mentoring for a handful of frontend teams.
+            The rest of my time is currently spent learning about serverless
+            development. In my free time, I do things out of this theme like
+            deports.
           </Lead>
 
           <div className="md:mt-4 ">
             <div className="">
               <div className="md:flex md:-mx-4">
                 <div className="mt-12 md:w-1/2 md:mx-4">
-                  <a href="https://miragejs.com/">
+                  <a href="https://www.facebook.com/tdevts">
                     <Image
-                      src="/images/projects/mirage.png"
+                      src="/images/projects/tdevs.png"
                       width={1776}
                       height={1000}
                       className="rounded-lg shadow-lg"
@@ -42,9 +42,9 @@ export default function Projects() {
                   </a>
                 </div>
                 <div className="mt-12 md:w-1/2 md:mx-4">
-                  <a href="https://embermap.com/">
+                  <a href="https://marketplace.visualstudio.com/items?itemName=IdeasCloud.icextension">
                     <Image
-                      src="/images/projects/embermap.png"
+                      src="/images/projects/ideascloud.png"
                       width={1000}
                       height={562}
                       className="rounded-lg shadow-lg"
@@ -60,10 +60,11 @@ export default function Projects() {
 
                 <div className="flex flex-wrap mt-4 -mx-2">
                   <div className="w-full px-2 md:w-1/3">
-                    <PastProjectCard href="https://ember-learn.github.io/ember-cli-addon-docs/">
-                      Addon Docs
+                    <PastProjectCard href="https://ideascloud.io/setup-docs">
+                      IdeasCloud Docs
                     </PastProjectCard>
                   </div>
+                  {/*
                   <div className="w-full px-2 md:w-1/3">
                     <PastProjectCard href="https://embermap.github.io/ember-data-storefront/">
                       Storefront
@@ -74,6 +75,7 @@ export default function Projects() {
                       Ember CLI Tailwind
                     </PastProjectCard>
                   </div>
+                  */}
                 </div>
               </div>
             </div>

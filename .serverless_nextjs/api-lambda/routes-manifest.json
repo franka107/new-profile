@@ -1,0 +1,1 @@
+{"version":3,"pages404":true,"basePath":"","redirects":[],"rewrites":[],"headers":[],"dynamicRoutes":[],"dataRoutes":[{"page":"/blog","dataRouteRegex":"^/_next/data/MjZybsZv2tol1Fh3DHgzj/blog.json$"},{"page":"/work-journal","dataRouteRegex":"^/_next/data/MjZybsZv2tol1Fh3DHgzj/work-journal.json$"}]}

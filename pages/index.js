@@ -1,5 +1,11 @@
 import { Head, Lead, Title, Spacer, Container, A } from "../components/ui";
-import { Twitter, GitHub, YouTube } from "../components/logos";
+import {
+  Twitter,
+  GitHub,
+  YouTube,
+  LinkedIn,
+  Spotify,
+} from "../components/logos";
 import NextLink from "next/link";
 import Image from "next/image";
 
@@ -7,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Sam Selikoff</title>
+        <title>Frank Cary</title>
       </Head>
 
       <Container size="some">
@@ -18,8 +24,9 @@ export default function Home() {
         <Spacer size="lg" />
 
         <Lead>
-          I'm Sam Selikoff, and since 2016 I've made a living teaching
-          JavaScript UI development on the web.
+          I'm Frank Cary, and since 2017 I started with this software
+          development path. I am currently specializing in backend and frontend
+          tecnologies with Javascript and Typescript.
         </Lead>
       </Container>
 
@@ -30,25 +37,32 @@ export default function Home() {
       <Container size="some">
         <div className="flex items-center justify-between mt-5 text-xs font-medium text-gray-700 sm:justify-start smm:justify-center smm:text-sm lg:text-base lg:mt-8">
           <a
-            href="https://twitter.com/samselikoff"
+            href="https://www.linkedin.com/in/fcaryv/"
             className="flex items-center hover:text-gray-800 smm:px-4 sm:pl-0 sm:pr-6 lg:pr-8"
           >
-            <Twitter className="h-4 mr-2" />
-            <span>Twitter</span>
+            <LinkedIn className="h-4 mr-2" />
+            <span>LinkedIn</span>
           </a>
           <a
-            href="https://www.youtube.com/user/samselikoff"
+            href="https://www.youtube.com/channel/UCNV88nuLrG-ODkthH6NuZgg"
             className="flex items-center hover:text-gray-800 smm:px-4 sm:pl-0 sm:pr-6 lg:pr-8"
           >
             <YouTube className="h-4 mr-2" />
             <span>YouTube</span>
           </a>
           <a
-            href="https://github.com/samselikoff"
+            href="https://github.com/franka107"
             className="flex items-center hover:text-gray-800 smm:px-4 sm:pl-0 sm:pr-6 lg:pr-8"
           >
             <GitHub className="h-4 mr-2" />
             <span>GitHub</span>
+          </a>
+          <a
+            href="https://open.spotify.com/show/5WiXJ1IKTerBTvA7dozjcQ"
+            className="flex items-center hover:text-gray-800 smm:px-4 sm:pl-0 sm:pr-6 lg:pr-8"
+          >
+            <Spotify className="h-4 mr-2" />
+            <span>Spotify</span>
           </a>
         </div>
 
@@ -62,16 +76,19 @@ export default function Home() {
               <SectionTitle link="/projects">Projects</SectionTitle>
               <SectionBody>
                 <p>
-                  I'm currently working on{" "}
-                  <A href="https://miragejs.com/">Mirage JS</A>, an API mocking
-                  library that lets frontend developers build complete features
-                  without touching their backend APIs.{" "}
+                  I'm working on{" "}
+                  <A href="https://marketplace.visualstudio.com/items?itemName=IdeasCloud.icextension">
+                    IdeasCloud Setup Editor
+                  </A>
+                  , a VSCode extension that lets you create advanced apps like
+                  backend and frontend abstracting programming language and
+                  allows you to do it in JSON files.
                 </p>
                 <p className="mt-6">
-                  I also run <A href="https://embermap.com/">embermap.com</A>{" "}
-                  where I make videos about design, development and testing
-                  using Ember.js, along with my friend{" "}
-                  <A href="https://twitter.com/ryantotweets">Ryan Toronto</A>.
+                  I'm also working together with other developers on the{" "}
+                  <A href="https://contigopecuario.com">Contigo Pecuario</A>{" "}
+                  project, a web application to manage all livestock control
+                  processes.
                 </p>
               </SectionBody>
             </Section>
@@ -82,18 +99,19 @@ export default function Home() {
               <SectionTitle link="/podcast">Podcast</SectionTitle>
               <SectionBody>
                 <p>
-                  Join me, Ryan + guests on a weekly podcast where we chat about
-                  all things JavaScript UI development!
+                  Join my channel, guests on a weekly podcast where we chat
+                  about all things code development and self-improvement!
                 </p>
                 <p className="mt-6">
-                  <A href="https://frontendfirst.fm/">
-                    → Check out Frontend First
+                  <A href="https://open.spotify.com/show/5WiXJ1IKTerBTvA7dozjcQ">
+                    → Check out in Spotify
                   </A>
                 </p>
               </SectionBody>
             </Section>
           </div>
 
+          {/*
           <div className="lg:w-1/2 lg:px-4">
             <Section>
               <SectionTitle link="/talks">Talks & Interviews</SectionTitle>
@@ -106,14 +124,14 @@ export default function Home() {
               </SectionBody>
             </Section>
           </div>
+          */}
 
           <div className="lg:w-1/2 lg:px-4">
             <Section>
               <SectionTitle link="/blog">Blog</SectionTitle>
               <SectionBody>
                 <p>
-                  You can find my writing on <A href="/blog">my blog</A>. I
-                  write mostly about frontend web development.
+                  You can find my writing on <A href="/blog">my blog</A>.
                 </p>
               </SectionBody>
             </Section>
@@ -174,7 +192,7 @@ export default function Home() {
 function HomepageImage({ className }) {
   return (
     <Image
-      src="/images/sam.jpeg"
+      src="/images/frank.jpg"
       width={1616}
       height={1080}
       className={`${className} h-full w-full object-cover object-top`}

@@ -1,11 +1,11 @@
 import { Head, Spacer, Container, Lead, Title, A } from "../components/ui";
 import Image from "next/image";
 
-export default function Podcast() {
+function Podcast() {
   return (
     <>
       <Head>
-        <title>Podcast – Sam Selikoff</title>
+        <title>Frank Cary | Podcast</title>
       </Head>
 
       <div className="md:text-lg-">
@@ -17,19 +17,15 @@ export default function Podcast() {
           <Spacer size="lg" />
 
           <Lead>
-            For more than two years I've used{" "}
-            <A href="https://frontendfirst.fm/">Frontend First</A> to talk about
-            whatever's going on in my day-to-day life doing frontend
-            development, along with my co-host Ryan Toronto.
+            Like a project that I just started. I am using Spotify to talk about
+            whatever's going on in my day-to-day life doing code development.
           </Lead>
-
           <Lead>
-            While we originally focused on Ember.js, these days we talk about
-            whatever's happening in the world of JavaScript UI development.
+            While I originally will focus on Front-end development, also I will
+            speak about themes as such self-improvement, finances, and general
+            tips.
           </Lead>
-
-          <Lead>Check out some of my favorite episodes below.</Lead>
-
+          <Lead>Soon I will show here my favorite episodes.</Lead>
           <div className="lg:mt-4 xl:mt-16">
             <div className="lg:flex lg:flex-wrap lg:-mx-4">
               {podcasts.map((podcast) => (
@@ -46,13 +42,13 @@ export default function Podcast() {
             </div>
 
             <div className="mt-8 mb-24 text-base md:text-lg">
-              <p>View the rest of the episodes on the show's website:</p>
+              <p>View the rest of the episodes on the Spotify platform:</p>
               <p className="mt-4">
                 <a
                   className="font-medium text-blue-500 underline"
-                  href="https://frontendfirst.fm/"
+                  href="https://open.spotify.com/show/5WiXJ1IKTerBTvA7dozjcQ"
                 >
-                  → Frontend First
+                  → Personal Podcast
                 </a>
               </p>
             </div>
@@ -90,49 +86,57 @@ const PodcastCard = ({ podcast }) => (
 
 const podcasts = [
   {
-    title: "Adam Wathan on Tailwind CSS",
-    url: "https://embermap.com/podcast/adam-wathan-on-tailwind-css",
-    imageUrl: "/images/podcasts/adam-wathan-on-tailwind-css.jpg",
+    title: "Welcome!",
+    url: "https://open.spotify.com/episode/0wNdsfFasdIyuXa0x1bzB4",
+    imageUrl: "/podcast.jpg",
     imageWidth: 1280,
     imageHeight: 720,
     description: `I loved this conversation because Adam does a great job breaking down the utility-first CSS approach to its first principles.`,
   },
-  {
-    title: "Yehuda Katz on Paradigms vs. Abstractions in UI Development",
-    url:
-      "https://embermap.com/podcast/yehuda-katz-on-paradigms-vs-abstractions-in-ui-development",
-    imageUrl:
-      "/images/podcasts/yehuda-katz-on-paradigms-vs-abstractions-in-ui-development.jpg",
-    imageWidth: 2550,
-    imageHeight: 1408,
-    description: `Yehuda is a wealth of knowledge. In this episode he shares why he believes abstractions should get more attention than paradigms – an interesting distinction I wasn't yet familiar with.`,
-  },
-  {
-    title: "Derrick Reimer on SPA Architecture with Elm and GraphQL",
-    url:
-      "https://embermap.com/podcast/derrick-reimer-on-spa-architecture-with-elm-and-graphql",
-    imageUrl:
-      "/images/podcasts/derrick-reimer-on-spa-architecture-with-elm-and-graphql.jpg",
-    imageWidth: 1920,
-    imageHeight: 1080,
-    description: `Derrick shares some really interesting aspects of the tech stack he used when building his real-time chat app, Level.`,
-  },
-  {
-    title: "Edward Faulkner on Embroider, Ember CLI's Modern Build System",
-    url:
-      "https://embermap.com/podcast/edward-faulkner-on-embroider-ember-cli-s-modern-build-system",
-    imageUrl:
-      "/images/podcasts/edward-faulkner-on-embroider-ember-cli-s-modern-build-system.jpg",
-    imageWidth: 1920,
-    imageHeight: 1080,
-    description: `Ed is one of those developers who pulls together insights from so many different areas of knowledge. I loved learning more about compilers in this episode.`,
-  },
-  {
-    title: "APIs are about Policy",
-    url: "https://embermap.com/podcast/apis-are-about-policy",
-    imageUrl: "/images/podcasts/apis-are-about-policy.jpg",
-    imageWidth: 1920,
-    imageHeight: 1080,
-    description: `This is a good representitive episode of the show since it's just Ryan and me talking. It's a bit of a special episode though, because in this one we do a deep dive of the wonderful essay "APIs are about Policy" by Steven Wittens.`,
-  },
+
+  //{
+  //  title: "Adam Wathan on Tailwind CSS",
+  //  url: "https://embermap.com/podcast/adam-wathan-on-tailwind-css",
+  //  imageUrl: "/images/podcasts/adam-wathan-on-tailwind-css.jpg",
+  //  imageWidth: 1280,
+  //  imageHeight: 720,
+  //  description: `I loved this conversation because Adam does a great job breaking down the utility-first CSS approach to its first principles.`,
+  //},
+  //{
+  //  title: "Yehuda Katz on Paradigms vs. Abstractions in UI Development",
+  //  url: "https://embermap.com/podcast/yehuda-katz-on-paradigms-vs-abstractions-in-ui-development",
+  //  imageUrl:
+  //    "/images/podcasts/yehuda-katz-on-paradigms-vs-abstractions-in-ui-development.jpg",
+  //  imageWidth: 2550,
+  //  imageHeight: 1408,
+  //  description: `Yehuda is a wealth of knowledge. In this episode he shares why he believes abstractions should get more attention than paradigms – an interesting distinction I wasn't yet familiar with.`,
+  //},
+  //{
+  //  title: "Derrick Reimer on SPA Architecture with Elm and GraphQL",
+  //  url: "https://embermap.com/podcast/derrick-reimer-on-spa-architecture-with-elm-and-graphql",
+  //  imageUrl:
+  //    "/images/podcasts/derrick-reimer-on-spa-architecture-with-elm-and-graphql.jpg",
+  //  imageWidth: 1920,
+  //  imageHeight: 1080,
+  //  description: `Derrick shares some really interesting aspects of the tech stack he used when building his real-time chat app, Level.`,
+  //},
+  //{
+  //  title: "Edward Faulkner on Embroider, Ember CLI's Modern Build System",
+  //  url: "https://embermap.com/podcast/edward-faulkner-on-embroider-ember-cli-s-modern-build-system",
+  //  imageUrl:
+  //    "/images/podcasts/edward-faulkner-on-embroider-ember-cli-s-modern-build-system.jpg",
+  //  imageWidth: 1920,
+  //  imageHeight: 1080,
+  //  description: `Ed is one of those developers who pulls together insights from so many different areas of knowledge. I loved learning more about compilers in this episode.`,
+  //},
+  //{
+  //  title: "APIs are about Policy",
+  //  url: "https://embermap.com/podcast/apis-are-about-policy",
+  //  imageUrl: "/images/podcasts/apis-are-about-policy.jpg",
+  //  imageWidth: 1920,
+  //  imageHeight: 1080,
+  //  description: `This is a good representitive episode of the show since it's just Ryan and me talking. It's a bit of a special episode though, because in this one we do a deep dive of the wonderful essay "APIs are about Policy" by Steven Wittens.`,
+  //},
 ];
+
+export default Podcast;
