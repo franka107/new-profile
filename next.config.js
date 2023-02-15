@@ -7,7 +7,7 @@ module.exports = withMdxEnhanced({
   defaultLayout: true,
   fileExtensions: ["mdx", "md"],
 })({
-  assetPrefix: isProd ? '/your-github-repo-name/' : '',
+  assetPrefix: isProd ? '/new-profile/' : '',
   pageExtensions: ["js", "jsx", "mdx"],
   webpack: (config, options) => {
     config.module.rules.push({
