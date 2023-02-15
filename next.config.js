@@ -9,9 +9,9 @@ module.exports = withMdxEnhanced({
 })({
   assetPrefix: isProd ? '/new-profile/' : '',
   pageExtensions: ["js", "jsx", "mdx"],
-  images: {
-    unoptimized: true
-  },
+  // images: {
+  //   unoptimized: true
+  // },
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|mp4)$/i,
