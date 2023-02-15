@@ -228,12 +228,12 @@ function MobileNav({ isOpen, handleClick, closeMenu }) {
                       </animated.a>
                     </div>
                     {[
-                      { label: "Journal", url: "/work-journal" },
+                      // { label: "Journal", url: "/work-journal" },
                       { label: "Projects", url: "/projects" },
-                      { label: "Podcast", url: "/podcast" },
+                      // { label: "Podcast", url: "/podcast" },
                       //{ label: "Talks", url: "/talks" },
                       { label: "Contact", url: "/contact" },
-                      { label: "Blog", url: "/blog" },
+                      // { label: "Blog", url: "/blog" },
                     ].map((link, i) => (
                       <div
                         className="flex items-center justify-center w-1/2 mt-6"
@@ -265,7 +265,7 @@ function DesktopNav() {
     <div className="items-center hidden ml-auto md:flex">
       {/* <DesktopNavLink to="/work-journal">Work journal</DesktopNavLink> */}
       <DesktopNavLink to="/projects">Projects</DesktopNavLink>
-      <DesktopNavLink to="/podcast">Podcast</DesktopNavLink>
+      {/* <DesktopNavLink to="/podcast">Podcast</DesktopNavLink> */}
       {/* <DesktopNavLink to="/talks">Talks</DesktopNavLink> */}
       <DesktopNavLink to="/contact">Contact</DesktopNavLink>
       {/* <DesktopNavLink to="/blog">Blog</DesktopNavLink> */}

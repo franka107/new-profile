@@ -31,9 +31,9 @@ export default function Projects() {
             <div className="">
               <div className="md:flex md:-mx-4">
                 <div className="mt-12 md:w-1/2 md:mx-4">
-                  <a href="https://www.facebook.com/tdevts">
-                    <Image
-                      src="/images/satcheck.webp"
+                  <a href="https://play.google.com/store/apps/details?id=com.satcheck.tracker">
+                    <img
+                      src="https://raw.githubusercontent.com/franka107/new-profile/master/public/images/satcheck.webp"
                       width={1776}
                       height={1000}
                       className="rounded-lg shadow-lg"
@@ -42,8 +42,8 @@ export default function Projects() {
                 </div>
                 <div className="mt-12 md:w-1/2 md:mx-4">
                   <a href="https://marketplace.visualstudio.com/items?itemName=IdeasCloud.icextension">
-                    <Image
-                      src="/images/projects/ideascloud.png"
+                    <img
+                      src="https://raw.githubusercontent.com/franka107/new-profile/master/public/images/projects/ideascloud.png"
                       width={1000}
                       height={562}
                       className="rounded-lg shadow-lg"

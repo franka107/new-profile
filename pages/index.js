@@ -160,7 +160,7 @@ export default function Home() {
       <div>
         <div className="mx-auto mt-16 xl:max-w-6xl">
           <ImageCard
-            src="/images/arequipa.jpg"
+            src="https://raw.githubusercontent.com/franka107/new-profile/master/public/images/arequipa.jpg"
             title="Arequipa City"
             date="2000–Present"
             width={5567}
@@ -196,8 +196,8 @@ export default function Home() {
 
 function HomepageImage({ className }) {
   return (
-    <Image
-      src="/images/frank.jpg"
+    <img
+      src="https://raw.githubusercontent.com/franka107/new-profile/master/public/images/frank.jpg"
       width={1616}
       height={1080}
       className={`${className} h-full w-full object-cover object-top`}
@@ -256,7 +256,7 @@ function Chevron(props) {
 function ImageCard({ src, title, date, width, height }) {
   return (
     <div className="relative">
-      <Image
+      <img
         className="object-cover w-full h-full xl:rounded-lg"
         src={src}
         width={width}
