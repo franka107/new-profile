@@ -17,12 +17,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "lts/*"
+          node-version: "14"
           cache: "yarn"
 
       - name: Build
         run: |
-          export NODE_OPTIONS=--openssl-legacy-provider 
           yarn install
           yarn build
           yarn export
