@@ -9,20 +9,20 @@ module.exports = withMdxEnhanced({
 })({
   assetPrefix: isProd ? '/new-profile/' : '',
   pageExtensions: ["js", "jsx", "mdx"],
-  webpack: (config, options) => {
-    config.module.rules.push({
-      test: /\.(png|jpe?g|gif|mp4)$/i,
-      use: [
-        {
-          loader: "file-loader",
-          options: {
-            publicPath: "/_next",
-            name: "static/media/[name].[hash].[ext]",
-          },
-        },
-      ],
-    });
+  // webpack: (config, options) => {
+  //   config.module.rules.push({
+  //     test: /\.(png|jpe?g|gif|mp4)$/i,
+  //     use: [
+  //       {
+  //         loader: "file-loader",
+  //         options: {
+  //           publicPath: "/_next",
+  //           name: "static/media/[name].[hash].[ext]",
+  //         },
+  //       },
+  //     ],
+  //   });
 
-    return config;
-  },
+  //   return config;
+  // },
 });
