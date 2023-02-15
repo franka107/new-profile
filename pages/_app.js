@@ -40,22 +40,22 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <link rel="apple-touch-icon" sizes="57x57" href="/isotype.png" />
-        <link rel="apple-touch-icon" sizes="60x60" href="/isotype.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="/isotype.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="/isotype.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="/isotype.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="/isotype.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="/isotype.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="/isotype.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/isotype.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/isotype.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/isotype.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/isotype.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/isotype.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="https://raw.githubusercontent.com/franka107/new-profile/master/public/isotype.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="https://raw.githubusercontent.com/franka107/new-profile/master/public/isotype.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="https://raw.githubusercontent.com/franka107/new-profile/master/public/isotype.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="https://raw.githubusercontent.com/franka107/new-profile/master/public/isotype.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="https://raw.githubusercontent.com/franka107/new-profile/master/public/isotype.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="https://raw.githubusercontent.com/franka107/new-profile/master/public/isotype.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="https://raw.githubusercontent.com/franka107/new-profile/master/public/isotype.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="https://raw.githubusercontent.com/franka107/new-profile/master/public/isotype.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/franka107/new-profile/master/public/isotype.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="https://raw.githubusercontent.com/franka107/new-profile/master/public/isotype.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/franka107/new-profile/master/public/isotype.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="https://raw.githubusercontent.com/franka107/new-profile/master/public/isotype.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/franka107/new-profile/master/public/isotype.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="/isotype.png" />
+        <meta name="msapplication-TileImage" content="https://raw.githubusercontent.com/franka107/new-profile/master/public/isotype.png" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
 

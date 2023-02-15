@@ -7,7 +7,7 @@ module.exports = withMdxEnhanced({
   defaultLayout: true,
   fileExtensions: ["mdx", "md"],
 })({
-  assetPrefix: isProd ? '/new-profile/' : '',
+  assetPrefix: isProd ? '/new-profile/' : '/new-profile/',
   pageExtensions: ["js", "jsx", "mdx"],
   // images: {
   //   unoptimized: true
