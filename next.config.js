@@ -1,9 +1,13 @@
 const withMdxEnhanced = require("next-mdx-enhanced");
 
+const isProd = process.env.NODE_ENV === 'production'
+
+
 module.exports = withMdxEnhanced({
   defaultLayout: true,
   fileExtensions: ["mdx", "md"],
 })({
+  assetPrefix: isProd ? '/your-github-repo-name/' : '',
   pageExtensions: ["js", "jsx", "mdx"],
   webpack: (config, options) => {
     config.module.rules.push({

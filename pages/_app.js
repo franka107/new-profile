@@ -263,12 +263,12 @@ function MobileNav({ isOpen, handleClick, closeMenu }) {
 function DesktopNav() {
   return (
     <div className="items-center hidden ml-auto md:flex">
-      <DesktopNavLink to="/work-journal">Work journal</DesktopNavLink>
+      {/* <DesktopNavLink to="/work-journal">Work journal</DesktopNavLink> */}
       <DesktopNavLink to="/projects">Projects</DesktopNavLink>
       <DesktopNavLink to="/podcast">Podcast</DesktopNavLink>
       {/* <DesktopNavLink to="/talks">Talks</DesktopNavLink> */}
       <DesktopNavLink to="/contact">Contact</DesktopNavLink>
-      <DesktopNavLink to="/blog">Blog</DesktopNavLink>
+      {/* <DesktopNavLink to="/blog">Blog</DesktopNavLink> */}
     </div>
   );
 }
@@ -278,8 +278,8 @@ function DesktopNavLink({ to, children }) {
     <Link href={to} activeClassName="text-gray-900">
       <a
         className="pb-4 ml-6 -mb-px text-gray-600 border-b border-transparent xl:pb-6 lg:ml-8 lg:text-base xl:text-lg hover:text-gray-900"
-        // activeClassName="text-gray-900"
-        // partiallyActive={true}
+      // activeClassName="text-gray-900"
+      // partiallyActive={true}
       >
         {children}
       </a>

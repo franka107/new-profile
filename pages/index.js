@@ -25,8 +25,8 @@ export default function Home() {
 
         <Lead>
           I'm Frank Cary, and since 2017 I started with this software
-          development path. I am currently specializing in backend and frontend
-          tecnologies with Javascript and Typescript.
+          development path. I am currently specializing in android development
+          with Kotlin.
         </Lead>
       </Container>
 
@@ -76,7 +76,13 @@ export default function Home() {
               <SectionTitle link="/projects">Projects</SectionTitle>
               <SectionBody>
                 <p>
-                  I'm working on{" "}
+                  I am working on a {" "}
+                  <A href={"https://play.google.com/store/apps/details?id=com.satcheck.tracker"}>
+                    tracker for public transport
+                  </A>  in the city of Arequipa using the latest technologies of native Android development {" "}
+                </p>
+                <p className="mt-6">
+                  I was working before on{" "}
                   <A href="https://marketplace.visualstudio.com/items?itemName=IdeasCloud.icextension">
                     IdeasCloud Setup Editor
                   </A>
@@ -126,7 +132,7 @@ export default function Home() {
           </div>
           */}
 
-          <div className="lg:w-1/2 lg:px-4">
+          {/* <div className="lg:w-1/2 lg:px-4">
             <Section>
               <SectionTitle link="/blog">Blog</SectionTitle>
               <SectionBody>
@@ -135,7 +141,7 @@ export default function Home() {
                 </p>
               </SectionBody>
             </Section>
-          </div>
+          </div> */}
         </div>
       </Container>
 
@@ -143,11 +149,10 @@ export default function Home() {
         <Container size="some">
           <Title size="sm">Life</Title>
           <Lead>
-            I was born in upstate New York, lived in Florida for 13 years, and
-            have since made my way back to the Northeast.
+            I was born in the beautiful city of Arequipa, in the country of Peru.
           </Lead>
           <Lead>
-            I currently live in New York City + absolutely love it here!
+            I am currently living here and I am eager to travel and explore new countries and cities.
           </Lead>
         </Container>
       </div>
@@ -155,13 +160,13 @@ export default function Home() {
       <div>
         <div className="mx-auto mt-16 xl:max-w-6xl">
           <ImageCard
-            src="/images/new-york.jpeg"
-            title="New York City"
-            date="2015–Present"
+            src="/images/arequipa.jpg"
+            title="Arequipa City"
+            date="2000–Present"
             width={5567}
             height={3132}
           />
-          <div className="flex xl:mt-10 xl:-mx-6">
+          {/* <div className="flex xl:mt-10 xl:-mx-6">
             <div className="w-1/2 xl:px-6">
               <ImageCard
                 src="/images/burlington-square.jpeg"
@@ -180,7 +185,7 @@ export default function Home() {
                 height={3456}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

@@ -18,13 +18,12 @@ export default function Projects() {
 
           <Lead>
             My main project is{" "}
-            <A href="https://www.facebook.com/tdevts">T-devs</A>, an enterprise
-            to build software and I'm currently working on it.
+            <A href="https://play.google.com/store/apps/details?id=com.satcheck.tracker">Satcheck Tracker</A>, a vehicle tracking app and I'm currently working on it.
           </Lead>
 
           <Lead>
-            The rest of my time is currently spent learning about serverless
-            development. In my free time, I do things out of this theme like
+            The rest of my time is currently spent learning about android development
+            . In my free time, I do things out of this theme like
             deports.
           </Lead>
 
@@ -34,7 +33,7 @@ export default function Projects() {
                 <div className="mt-12 md:w-1/2 md:mx-4">
                   <a href="https://www.facebook.com/tdevts">
                     <Image
-                      src="/images/projects/tdevs.png"
+                      src="/images/satcheck.webp"
                       width={1776}
                       height={1000}
                       className="rounded-lg shadow-lg"
@@ -63,13 +62,26 @@ export default function Projects() {
                     <PastProjectCard href="https://ideascloud.io/setup-docs">
                       IdeasCloud Docs
                     </PastProjectCard>
+                    {/* <PastProjectCard href="https://ideascloud.io/setup-docs">
+                      IdeasCloud Docs
+                    </PastProjectCard> */}
                   </div>
-                  {/*
                   <div className="w-full px-2 md:w-1/3">
-                    <PastProjectCard href="https://embermap.github.io/ember-data-storefront/">
-                      Storefront
+                    <PastProjectCard href="https://cubizzperu.com/">
+                      CubizzPeru
                     </PastProjectCard>
                   </div>
+                  <div className="w-full px-2 md:w-1/3">
+                    <PastProjectCard href="https://contigopecuario.com/">
+                      Contigo Pecuario
+                    </PastProjectCard>
+                  </div>
+                  <div className="w-full px-2 md:w-1/3">
+                    <PastProjectCard href="https://cubizzperu.com/">
+                      Radiadores Luque
+                    </PastProjectCard>
+                  </div>
+                  {/*
                   <div className="w-full px-2 md:w-1/3">
                     <PastProjectCard href="https://github.com/embermap/ember-cli-tailwind">
                       Ember CLI Tailwind
